@@ -113,8 +113,11 @@ header nav div{
   background-color: #337ab7;
   color: white;
 }
-
-btn-flex {
+.btn-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+.btn-flex img {
+  height: 10%;
+  width: auto;
 }
