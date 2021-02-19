@@ -49,12 +49,13 @@ header ul {
  }
 header nav div:nth-child(4) {
    display: none;
-   flex-basis: 5%;
+   flex-basis: 6%;
+   flex-shrink: 2;
  }
 header nav div:nth-child(4) span {
  display: block;
- width: 50px;
- height: 10px;
+ width: auto;
+ height: 5px;
  background-color: black;
  margin: 3px 0;
  text-align: right;
@@ -87,7 +88,7 @@ header nav div{
 
 }
 .card {
-  height: 300px;
+  height: 350px;
   display:flex;
   background-color: white;
   border-radius: 5px;
@@ -116,8 +117,40 @@ header nav div{
 .btn-flex {
   display: flex;
   justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
 }
 .btn-flex img {
-  height: 10%;
-  width: auto;
+  width: 10%;
+}
+@media screen and (max-width:991px) {
+  .jumbo {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+    text-align: center;
+  }
+  .jumbo div {
+    flex-basis: 100%;
+  }
+}
+.partners {
+  background-color: #f3f5f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners h6 {
+  text-transform: uppercase;
+}
+.partners div{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width:768px) {
+  .partners div img {
+    flex-basis: 35%;
+  }
 }
