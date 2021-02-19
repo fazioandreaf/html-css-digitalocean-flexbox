@@ -76,20 +76,45 @@ header nav div{
   background: url(../img/jumbo.svg);
   padding: 60px 10px;
   justify-content:space-between;
+  align-content: center;
 }
 .jumbo div {
   flex-basis: 45%;
+  align-self: center;
+}
+.jumbo div:first-child {
+  color: white;
+
 }
 .card {
+  height: 300px;
   display:flex;
   background-color: white;
   border-radius: 5px;
-  padding: 15px 10px;
+  padding: 25px 10px;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: ;
+}
+.card h3, .card h4 {
+  text-align: center;
 }
 .card * {
   align-self: stretch;
+}
+.input-btn {
+  color: #999;
+  opacity: 0.9;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.blue-bg {
+  background-color: #337ab7;
+  color: white;
+}
+
+btn-flex {
+  display: flex;
+  justify-content: center;
 }
