@@ -6,10 +6,10 @@
 body {
   font-family:"Inter", sans-serif;
 }
-.centrato {
+.centrato, section, section div {
   padding: 0px 1%;
 }
-header, .jumbo p, section {
+header, .jumbo p, section, section>div {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -153,4 +153,35 @@ header nav div{
   .partners div img {
     flex-basis: 35%;
   }
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.section-mainpart {
+  display: flex;
+}
+.section-mainpart-left {
+  flex-basis: 20%;
+  text-align: left;
+  padding-left: 10%;
+}
+.section-mainpart-right {
+  display: flex;
+  flex-basis: 80%;
+  flex-wrap: wrap;
+}
+.section-mainpart-right div{
+  flex-basis: 50%;
+  text-align: left;
+}
+@media screen and (max-width:991px) {
+  .section-mainpart {
+    flex-wrap: wrap;
+  }
+  .section-mainpart-right div{
+    flex-basis: 100%;
+  }
+
 }
