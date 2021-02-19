@@ -38,12 +38,12 @@ header nav {
    display: flex;
    justify-content: space-between;
  }
-header ul li {
+header ul li, .ispiration div ul li {
  display: inline-block;
  text-transform: capitalize;
  text-decoration: none;
 }
-header ul {
+header ul, section>div{
  display: inline-block;
  text-align:right;
  }
@@ -183,5 +183,15 @@ header nav div{
   .section-mainpart-right div{
     flex-basis: 100%;
   }
-
+}
+.ispiration {
+  text-align: center;
+  background-color: #f3f5f9;
+}
+.carousel {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel * {
+  align-self:center;
 }
